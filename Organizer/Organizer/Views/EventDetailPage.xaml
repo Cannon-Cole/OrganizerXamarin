@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Organizer.Views.EventDetailPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout x:Name="detailLayout">
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+    
+    <ContentPage.Resources>
+        <Style TargetType="Frame"
+               Class="DetailContainer">
+            <Setter Property="BackgroundColor"
+                    Value="Bisque" />
+            <Setter Property="Padding"
+                    Value="5" />
+     
+        </Style>
+
+        <Style TargetType="Label"
+               Class="Heading">
+            <Setter Property="HorizontalTextAlignment"
+                    Value="Start" />
+            <Setter Property="FontSize"
+                    Value="Title" />
+            <Setter Property="FontAttributes"
+                    Value="Bold" />
+        </Style>
+
+        <Style TargetType="Label"
+               Class="Content">
+            <Setter Property="HorizontalTextAlignment"
+                    Value="Start" />
+            <Setter Property="FontSize"
+                    Value="Subtitle" />
+        </Style>
+    </ContentPage.Resources>
+    
+</ContentPage>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Organizer.Views.EditEventPage">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+
+            <Label Text="Add Event" HorizontalOptions="CenterAndExpand" />
+
+            <Entry x:Name="EventName" Placeholder="Event Name" />
+
+            <Editor x:Name="EventNote" Placeholder="Notes" />
+
+            <Label Text="Start Day"/>
+            <DatePicker x:Name="EventStartDate" Format="D"/>
+
+            <Label Text="End Day"/>
+            <DatePicker x:Name="EventEndDate" Format="D" />
+
+            <Label Text="Start Time"/>
+            <TimePicker x:Name="EventStartTime"/>
+
+            <Label Text="End Time"/>
+            <TimePicker x:Name="EventEndTime"/>
+
+            <Button Text="Edit Event"
+                HorizontalOptions="Center"
+                Clicked="EditEvent"/>
+
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

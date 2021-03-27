@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Organizer.Views.AddEventPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="EventName" Placeholder="Event Name" />
+
+            <Editor x:Name="EventNote" Placeholder="Notes" />
+            
+            <Label Text="Start Day"/>
+            <Label x:Name="EndDateIsGreaterThanStartDateWarning" Text="End date is before start date" FontAttributes="Bold" TextColor="Red" IsVisible="false"/>
+            <DatePicker x:Name="EventStartDate" Format="D" DateSelected="StartDateSelected"/>
+            
+            <Label Text="End Day"/>
+            <DatePicker x:Name="EventEndDate" Format="D" DateSelected="EndDateSelected"/>
+
+            <Label x:Name="StartTimeLabel" Text="Start Time"/>
+            <Label x:Name="EndTimeIsGreaterThanStartTimeWarning" Text="Time cannot span one day" FontAttributes="Bold" TextColor="Red" IsVisible="false"/>
+            <TimePicker x:Name="EventStartTime" Unfocused="TimeSelected"/>
+
+            <Label x:Name="EndTimeLabel" Text="End Time"/>
+            <TimePicker x:Name="EventEndTime" Unfocused="TimeSelected"/>
+
+            <ScrollView>
+                <StackLayout x:Name="ChunksAvailable"></StackLayout>
+            </ScrollView>
+        
+            <Button Text="Add Event"
+                HorizontalOptions="Center"
+                Clicked="AddEvent"/>
+
+            <Button Text="Show events"
+                HorizontalOptions="Center"
+                Clicked="Button_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

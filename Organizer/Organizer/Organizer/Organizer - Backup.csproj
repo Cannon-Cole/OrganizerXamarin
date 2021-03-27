@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <Compile Remove="Data\OrganizerDatabase.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Data\data.sqlite" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="sqlite-net-pcl" Version="1.7.335" />
+    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1451" />  
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Data\data.sqlite" />
+    <Resource Include="Data\OrganizerDatabase.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\MonthlyPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\TabbedPage1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\testpage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

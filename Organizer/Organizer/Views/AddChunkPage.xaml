@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Organizer.Views.AddChunkPage">
+    <ContentPage.Content xmlns:local="clr-namespace:ColorPicker;assembly=ColorPicker">
+        <ScrollView>
+        <StackLayout>
+
+            <Label Text="Add Event" HorizontalOptions="CenterAndExpand" />
+
+            <Entry x:Name="ChunkName" Placeholder="Chunk Name" />
+
+            <Editor x:Name="ChunkNote" Placeholder="Notes" />
+
+            <Label x:Name="StartTimeLabel" Text="Start Time"/>
+            <TimePicker x:Name="ChunkStartTime"/>
+
+            <Label x:Name="EndTimeLabel" Text="End Time"/>
+            <TimePicker x:Name="ChunkEndTime"/>
+
+            <local:ColorCircle x:Name="ChunkColor" HeightRequest="250"></local:ColorCircle>
+
+            <Button x:Name="ChunkButton" Text="Add Chunk"
+                HorizontalOptions="Center"
+                Clicked="AddChunk"/>
+
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

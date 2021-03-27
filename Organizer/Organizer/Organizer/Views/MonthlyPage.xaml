@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Organizer.Views.MonthlyPage">
+    <ContentPage.Content>
+        <StackLayout x:Name="monthPageContainer">
+            <FlexLayout JustifyContent="SpaceBetween">
+                <ImageButton Source="left_arrow.png" BackgroundColor="Transparent" WidthRequest="60" HeightRequest="40" Clicked="BackMonth"></ImageButton>
+            <Label x:Name="MonthNameLabel" FontSize="Title" FontAttributes="Bold" TextColor="Black"></Label>
+                <ImageButton Source="right_arrow.png" BackgroundColor="Transparent" WidthRequest="60" HeightRequest="40" Clicked="ForwardMonth"></ImageButton>
+            </FlexLayout>
+            <StackLayout x:Name="monthContainer">
+                <!--<FlexLayout Direction="Row" AlignItems="Center" JustifyContent="SpaceBetween">
+                    <Frame BackgroundColor="SkyBlue" Padding="5" HorizontalOptions="Center" FlexLayout.Basis="14.2857142857%">
+                        <Label Text="Backlog" HorizontalTextAlignment="Center"></Label>
+                    </Frame>
+                    <Frame BackgroundColor="SkyBlue" Padding="5" HorizontalOptions="Center" FlexLayout.Basis="14.2857142857%">
+                        <Label Text="Backlog" HorizontalTextAlignment="Center"></Label>
+                    </Frame>
+                    <Frame BackgroundColor="SkyBlue" Padding="5" HorizontalOptions="Center" FlexLayout.Basis="14.2857142857%">
+                        <Label Text="Backlog" HorizontalTextAlignment="Center"></Label>
+                    </Frame>
+                    <Frame BackgroundColor="SkyBlue" Padding="5" HorizontalOptions="Center" FlexLayout.Basis="14.2857142857%">
+                        <Label Text="Backlog" HorizontalTextAlignment="Center"></Label>
+                    </Frame>
+                    <Frame BackgroundColor="SkyBlue" Padding="5" HorizontalOptions="Center" FlexLayout.Basis="14.2857142857%">
+                        <Label Text="Backlog" HorizontalTextAlignment="Center"></Label>
+                    </Frame>
+                    <Frame BackgroundColor="SkyBlue" Padding="5" HorizontalOptions="Center" FlexLayout.Basis="14.2857142857%">
+                        <Label Text="Backlog" HorizontalTextAlignment="Center"></Label>
+                    </Frame>
+                    <Frame BackgroundColor="SkyBlue" Padding="5" HorizontalOptions="Center" FlexLayout.Basis="14.2857142857%">
+                        <Label Text="Backlog" HorizontalTextAlignment="Center"></Label>
+                    </Frame>
+                </FlexLayout>-->
+            </StackLayout>
+
+
+            <ScrollView x:Name="ToDoScroll">
+                <StackLayout x:Name="listContainer">
+
+                    <!--<Frame BackgroundColor="#13CF13" Padding="5" HorizontalOptions="Center" WidthRequest="80" HeightRequest="20" CornerRadius="40">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="EventCompletionToggle"/>
+                    </Frame.GestureRecognizers>
+                    <Label WidthRequest="40" Text="Backlog" HorizontalTextAlignment="Center"></Label>
+                </Frame>
+
+                <Frame BackgroundColor="BlanchedAlmond" Padding="5" HorizontalOptions="Center" WidthRequest="80" HeightRequest="20" CornerRadius="40">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="EventCompletionToggle"/>
+                    </Frame.GestureRecognizers>
+                    <Label WidthRequest="40" Text="asdf" HorizontalTextAlignment="Center"></Label>
+                </Frame>-->
+
+
+
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
