@@ -83,7 +83,7 @@ namespace Organizer.Data
 
         public async Task<List<Chunk>> GetChunksByEvent(Event Event)
         {
-            return await _database.QueryAsync<Chunk>("SELECT c.ChunkId FROM Event e " +
+            return await _database.QueryAsync<Chunk>("SELECT * FROM Event e " +
                 "JOIN ChunkEvent ce ON ce.EventID = e.EventID " +
                 "JOIN Chunk c ON ce.ChunkID = c.ChunkID WHERE e.EventID = " + Event.EventID + " ORDER BY c.Name ASC");
         }

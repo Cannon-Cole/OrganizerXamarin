@@ -84,18 +84,26 @@ namespace Organizer.Views
 
             StackLayout labelStack = new StackLayout();
 
+            labelStack.Children.Add(eventName);
+            labelStack.Children.Add(eventNote);
+
             List<Organizer.Models.Chunk> chunksForEvent = await App.Database.GetChunksByEvent(toAdd);
+
+            FlexLayout horizontal = new FlexLayout();
 
             foreach (Organizer.Models.Chunk chunkToAdd in chunksForEvent)
             {
-                Frame chunkIndicator = new Frame();
-                chunkIndicator.BackgroundColor = Color.FromHex(chunkToAdd.Color);
+                
+                horizontal.Direction = FlexDirection.Row;
 
-                labelStack.Children.Add(chunkIndicator);
+                Frame chunkIndicator = new Frame();
+                chunkIndicator.BackgroundColor = (Color) Color.FromHex(chunkToAdd.Color);
+                chunkIndicator.HorizontalOptions = LayoutOptions.Start;
+
+                horizontal.Children.Add(chunkIndicator);
             }
 
-            labelStack.Children.Add(eventName);
-            labelStack.Children.Add(eventNote);
+            labelStack.Children.Add(horizontal);
 
             EncapsulatingFrame.Content = labelStack;
             ToDo.Children.Add(EncapsulatingFrame);

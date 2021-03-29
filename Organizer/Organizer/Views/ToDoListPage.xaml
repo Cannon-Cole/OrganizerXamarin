@@ -23,9 +23,7 @@
                     </Frame.GestureRecognizers>
                     <Label WidthRequest="40" Text="asdf" HorizontalTextAlignment="Center"></Label>
                 </Frame>-->
-
-               
-
+                    
                 </StackLayout>
             </ScrollView>
         </StackLayout>
