@@ -25,15 +25,10 @@
             <ScrollView>
                 <StackLayout x:Name="ChunksAvailable"></StackLayout>
             </ScrollView>
-        
+
             <Button Text="Add Event"
                 HorizontalOptions="Center"
                 Clicked="AddEvent"/>
-
-            <Button Text="Show events"
-                HorizontalOptions="Center"
-                Clicked="Button_Clicked"/>
-
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

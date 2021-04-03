@@ -10,7 +10,9 @@ namespace Organizer
         public static Boolean toDoNeedsLoading;
         public static Boolean monthNeedsLoading;
         public static Boolean addEventChunkListNeedsLoading;
+        public static Boolean chunkViewNeedsLoading;
         public static double scrollPosition;
+        public static double scrollChunkPosition;
         public static Color notComplete = Color.Coral;
         public static Color complete = Color.Beige;
         public static Color eventChunkSelectedColor = Color.BurlyWood;

@@ -28,6 +28,7 @@ namespace Organizer.Views
             await App.Database.SaveChunkAsync(saveChunk);
 
             Helper.addEventChunkListNeedsLoading = true;
+            Helper.chunkViewNeedsLoading = true;
 
             List<Organizer.Models.Chunk> retrieveChunks = await App.Database.GetChunksAsync();
         }

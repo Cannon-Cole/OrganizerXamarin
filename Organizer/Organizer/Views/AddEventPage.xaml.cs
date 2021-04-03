@@ -82,6 +82,7 @@ namespace Organizer.Views
 
             Helper.toDoNeedsLoading = true;
             Helper.monthNeedsLoading = true;
+            Helper.chunkViewNeedsLoading = true;
             Helper.scrollPosition = 0.0;
 
             BuildChunkList(await App.Database.GetChunksAsync());
@@ -219,17 +220,6 @@ namespace Organizer.Views
             Console.WriteLine(chunkToSave.Name);
             Console.WriteLine(selectedChunks.Count);
 
-        }
-
-        private async void Button_Clicked(object sender, EventArgs e)
-        {
-            Console.WriteLine("Hi");
-            List <Organizer.Models.Chunk> testChunks = await App.Database.GetChunksByEvent(temp);
-
-            foreach (Organizer.Models.Chunk chunk in testChunks)
-            {
-                Console.WriteLine(chunk.ChunkID);
-            }
         }
     }
 }

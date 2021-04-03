@@ -4,12 +4,8 @@
              x:Class="Organizer.Views.ToDoListPage">
     <ContentPage.Content>
         <StackLayout>
-        <Label Text="To Do List" HorizontalOptions="CenterAndExpand"/>
             <ScrollView x:Name="ToDoScroll">
                 <StackLayout x:Name="ToDo">
-
-                    <Label Text="To Do List" HorizontalOptions="CenterAndExpand" TextColor="Black" FontSize="Title"/>
-
                     <!--<Frame BackgroundColor="#13CF13" Padding="5" HorizontalOptions="Center" WidthRequest="80" HeightRequest="20" CornerRadius="40">
                     <Frame.GestureRecognizers>
                         <TapGestureRecognizer Tapped="EventCompletionToggle"/>

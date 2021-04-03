@@ -28,3 +28,4 @@ C:\Users\colec\source\repos\Organizer\Organizer\Organizer\obj\Debug\netstandard2
 C:\Users\colec\source\repos\Organizer\Organizer\Organizer\obj\Debug\netstandard2.0\Views\EditEventPage.xaml.g.cs
 C:\Users\colec\source\repos\Organizer\Organizer\Organizer\obj\Debug\netstandard2.0\Views\WeeklyPage.xaml.g.cs
 C:\Users\colec\source\repos\Organizer\Organizer\Organizer\obj\Debug\netstandard2.0\Views\AddChunkPage.xaml.g.cs
+C:\Users\colec\source\repos\Organizer\Organizer\Organizer\obj\Debug\netstandard2.0\Views\ChunkViewPage.xaml.g.cs

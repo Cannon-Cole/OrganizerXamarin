@@ -110,14 +110,13 @@ namespace Organizer.Views
         }
         protected void AddToDoDayLabelToView(DateTime sectionDate)
         {
-
             Label dayLabel = new Label
             {
                 Text = sectionDate.Date.ToShortDateString(),
                 HorizontalTextAlignment = TextAlignment.Center,
                 FontAttributes = FontAttributes.Bold,
                 FontSize = Device.GetNamedSize(NamedSize.Title, typeof(Label)),
-                TextColor = Color.Black   
+                TextColor = Color.Black
             };
             ToDoLabels.Add(dayLabel);
             ToDo.Children.Add(dayLabel);

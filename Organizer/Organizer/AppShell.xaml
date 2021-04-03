@@ -32,9 +32,10 @@
 
     <TabBar>
         <ShellContent Title="Monthly" Icon="icon_calendar.png" ContentTemplate="{DataTemplate local:MonthlyPage}" />
-        <ShellContent Title="Add Event" Icon="icon_calendar.png" ContentTemplate="{DataTemplate local:AddEventPage}" />
         <ShellContent Title="To Do List" Icon="icon_calendar.png" ContentTemplate="{DataTemplate local:ToDoListPage}" />
-        <ShellContent Title="Chunk" Icon="icon_about.png" ContentTemplate="{DataTemplate local:AddChunkPage}" />
+        <ShellContent Title="Add Event" Icon="icon_calendar.png" ContentTemplate="{DataTemplate local:AddEventPage}" />
+        <ShellContent Title="Add Chunk" Icon="icon_about.png" ContentTemplate="{DataTemplate local:AddChunkPage}" />
+        <ShellContent Title="View Chunks" Icon="icon_about.png" ContentTemplate="{DataTemplate local:ChunkViewPage}" />
     </TabBar>
 
     <!--

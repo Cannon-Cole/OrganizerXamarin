@@ -87,6 +87,15 @@ namespace Organizer.Data
                 "JOIN ChunkEvent ce ON ce.EventID = e.EventID " +
                 "JOIN Chunk c ON ce.ChunkID = c.ChunkID WHERE e.EventID = " + Event.EventID + " ORDER BY c.Name ASC");
         }
+        public async Task<List<Event>> GetEventsForASpecificChunk(int ID)
+        {
+            return await _database.QueryAsync<Event>("SELECT Event.EventID, Event.Name, Event.Note, Event.StartDate, Event.EndDate, Event.StartTime, Event.EndTime, Event.Complete " +
+                "FROM Event " +
+                "JOIN ChunkEvent ON Event.EventID = ChunkEvent.EventID " +
+                "JOIN Chunk ON ChunkEvent.ChunkID = Chunk.ChunkID " +
+                "WHERE ChunkEvent.ChunkID = " + ID + " ORDER BY Event.Name ASC");
+        }
+
         public Task<int> SaveChunkAsync(Chunk Chunk)
         {
             if (Chunk.ChunkID != 0)

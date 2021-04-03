@@ -33,7 +33,7 @@
     <EmbeddedResource Update="Views\AddEventPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\ChunkView.xaml">
+    <EmbeddedResource Update="Views\ChunkViewPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\EditEventPage.xaml">
